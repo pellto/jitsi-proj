@@ -3,8 +3,8 @@ sudo apt install apt-transport-https
 
 sudo apt-add-repository universe
 sudo apt update
-sudo hostnamectl set-hostname jitsi.pellto-cmiyc.site
-sudo echo -e '\n13.125.126.194 jitsi.pellto-cmiyc.site' > /etc/hosts
+sudo hostnamectl set-hostname ${YOUR-DOMAIN}
+sudo echo -e '\n${YOUR-IP} ${YOUR-DOMAIN}' > /etc/hosts
 
 sudo curl -sL https://prosody.im/files/prosody-debian-packages.key -o /etc/apt/keyrings/prosody-debian-packages.key
 echo "deb [signed-by=/etc/apt/keyrings/prosody-debian-packages.key] http://packages.prosody.im/debian $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/prosody-debian-packages.list
