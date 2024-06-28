@@ -27,6 +27,9 @@ node ./dist/src/main.js
 - Enter Swagger
     - http://localhost/api-docs
 
+- Enter current Public Swagger
+    - https://api.pellto-cmiyc.site/api-docs
+
 
 ## 파일 구조
 ```shell
